@@ -2,7 +2,7 @@ print("Fibonacci numbers calculator")
 
 
 def users_range_input():
-# asking user for defining of Fibonacci numbers range
+    # asking user for defining of Fibonacci numbers range
     converted = False
 
     while not converted:
@@ -15,8 +15,8 @@ def users_range_input():
             continue
 
 
-def calc(n):
-# Fibonacci numbers calculation
+def calculation(n):
+    # Fibonacci numbers calculation
     a = 0
     b = 1
     list_of_fibonacci = []
@@ -37,12 +37,12 @@ def calc(n):
 
 
 def results_print(res):
-# Fibonacci numbers print
+    # Fibonacci numbers print
     print(res)
 
 
 def main():
-    results = calc(users_range_input())
+    results = calculation(users_range_input())
     results_print(results)
 
 

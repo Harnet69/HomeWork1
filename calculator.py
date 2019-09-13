@@ -80,7 +80,8 @@ def display(a, b, c, sign):
     # displaying a calculations result
     print(f"Your result is:\n{a} {sign} {b} = {c}")
 
-#code snippet
+
+# code snippet
 def main():
     print("There is my calculator")
     question = ""
@@ -95,5 +96,7 @@ def main():
         result = calculate(num1, num2, sign)
         display(num1, num2, result, sign)
         question = input("Want to continue? yes/no\n")
+
+
 if __name__ == "__main__":
     main()
