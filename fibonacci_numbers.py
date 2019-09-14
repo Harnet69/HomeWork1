@@ -1,13 +1,10 @@
-print("Fibonacci numbers calculator")
-
-
 def users_range_input():
     # asking user for defining of Fibonacci numbers range
     converted = False
 
     while not converted:
         try:
-            fib_length = int(input("Type a number\n"))
+            fib_length = int(input("How many numbers you want to print out?\n"))
             converted = True
             return fib_length
         except ValueError:
@@ -38,7 +35,9 @@ def calculation(n):
 
 def results_print(res):
     # Fibonacci numbers print
-    print(res)
+    print("Fibonacci sequance:\n")
+    for index, value in enumerate(res):
+        print(index+1, value)
 
 
 def main():
