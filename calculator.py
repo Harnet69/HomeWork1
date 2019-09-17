@@ -1,6 +1,3 @@
-import math
-
-
 def add(a, b):
     # additions calculation
     return a+b

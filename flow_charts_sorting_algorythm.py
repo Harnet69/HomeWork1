@@ -1,5 +1,5 @@
 def main():
-    numbers = [1, 2 ,56, 32, 51, 2, 8, 92, 15]
+    numbers = [1, 2, 56, 32, 51, 2, 8, 92, 15]
     print(numbers)
     iteration = 1
     n = len(numbers)

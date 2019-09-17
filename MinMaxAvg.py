@@ -2,9 +2,7 @@ def min_find(numbers):
     num_min = numbers[0]
     for num in numbers[1:]:
         if isinstance(num, list):
-            for nest_num in num:
-                if nest_num < num_min:
-                    num_min = nest_num
+            num = min_find(num)
         if isinstance(num, int):
             if num < num_min:
                 num_min = num
@@ -15,16 +13,14 @@ def max_find(numbers):
     num_max = numbers[0]
     for num in numbers[1:]:
         if isinstance(num, list):
-            for nest_num in num:
-                if nest_num > num_max:
-                    num_max = nest_num
+            num = min_find(num)
         if isinstance(num, int):
             if num > num_max:
                 num_max = num
     return num_max
 
 
-def avg_find(numbers):
+def avg_find(numbers): #TODO use a reccuftion in avg calculations function for embedded lists
     avg = 0
     for num in numbers:
         if isinstance(num, list):
